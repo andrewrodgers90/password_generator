@@ -6,4 +6,5 @@ The program ensures that the password has a minimum of 8 characters, and has at 
 
 <a href="https://github.com/andrewrodgers90/password_generator/blob/main/password_generator.py">The code</a>
 
+## Examples:
 ![image](https://github.com/andrewrodgers90/password_generator/assets/132149730/69f0b8a6-ad25-4cd3-a1dd-bdc5076af00f)
