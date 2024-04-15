@@ -25,7 +25,7 @@ def generate_password(min_len=8, max_len=None):
     return password
 
 if len(sys.argv) != 3:
-    print("Please enter two arguments: [min_len] [max_len].")
+    print("\033[91mPlease enter two arguments: [min_len] [max_len].\033[0m")
     exit (1)
 
 try:
@@ -38,12 +38,12 @@ try:
     else:
         max_len = 16
 except ValueError:
-    print("Please enter valid integer values for password lengths.")
+    print("\033[91mPlease enter valid integer values for password lengths.\033[0m")
     exit(1)
 
 try:
     password = generate_password(min_len, max_len)
-    print("Password =", password)
-    print("Password length:", len(password), "\n")
+    print("\n\033[92mPassword =\033[0m", password)
+    print("\033[96mPassword length:\033[0m", len(password), "\n")
 except ValueError as e:
     print(e)
